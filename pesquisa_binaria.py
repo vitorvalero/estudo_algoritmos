@@ -2,6 +2,7 @@
 def pesquisa_binaria(lista, item):
     baixo = 0
     alto = len(lista) - 1
+
     # While loop que realiza a pesquisa binária até localizar e retornar a posição do argumento "item" na lista:
     while baixo <= alto:
         meio = (baixo + alto) // 2
@@ -12,6 +13,7 @@ def pesquisa_binaria(lista, item):
             alto = meio - 1
         else:
             baixo = meio + 1
+            
     # Caso o valor do argumento "item" não esteja contido no conjunto do argumento "lista", retorna "None":
     else:
         return None
